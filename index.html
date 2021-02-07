@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pizza Roma</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <h1>Hello World 2</h1>
+    <header>
+        <nav id="head">
+            <div class="call-number">(050) 000 00 00
+            </div>
+            <div class="delivery-service">Служба доставки</div>
+            <ul>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#reviews">Відгуки</a></li>
+                <li><a href="#contacts">Контанки</a></li>
+            </ul>
+            <div class="name">
+                <p>Твоя улюблена піца готується тут</p>
+                <h1>Pizza Roma</h1>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article class="about">
+            <div id="about">
+                <p>Ми дружня команда людей, які люблять свою справу.
+                    З пристрастю у серці, запалом у роботі, усмішкою на обличчі,
+                    ми готуємо для Вас найкращу їжу у місті.
+                    Ласкаво просимо до Pizza Roma !</p>
+                <img src="img/icons/pizza.png" alt="піца">
+            </div>
+            <div>
+                <h3>Оригінальні рецепти</h3>
+                <p>Ми дружня команда людей, які люблять свою справу.
+                    З пристрастю у серці, запалом у роботі, усмішкою на обличчі,
+                    ми готуємо для Вас найкращу їжу у місті.
+                    Ласкаво просимо до Pizza Roma!</p>
+                <img src="img/icons/good-food.png" alt="якісні продукти">
+            </div>
+            </div>
+            <h3>Найкращі продукти</h3>
+            <p>Ми персонально обираємо найкращі та найсвіжіші продукти від перевірених постачальників.</p>
+            <img src="img/icons/delivery.png" alt="доставка">
+            <h3>Швидка доставка</h3>
+            <p>“Це просто смакота з доставкою! ” Кажуть наші клієнти. Обирайте в меню нашого сайту смачні страви і
+                замовляйте доставку.</p>
+            </div>
+        </article>
+        <div class="menu" id="menu">
+            <h2>Обирай собі до смаку</h2>
+            <img src="img/myasna.png" alt="myasna">
+            <h3>М'ясна</h3>
+            <p>Основа томатна, телятина, салямі, томати, моцарела, курка, кримська цибуля.</p>
+            <button value="135">135грн</button>
+        </div>
+        <div class="order">
+            <h2>При покупці трьох піц - четверта в подарунок!</h2>
+            <button>Зробити замовлення</button>
+        </div>
+        <div class="reviews" id="reviews">
+            <h3>Наші клієнти говорять</h3>
+            <!--тут будуть відгуки клієнтів-->
+            <form>
+                <label>
+                    <input type="text" name="text" placeholder="Ім'я" required></label>
+                <label>
+                    <input type="email" name="email" placeholder="email" required></label>
+                <label for="message">
+                    <textarea id="message" name="message" placeholder="Відгук" required></textarea>
+                </label>
+                <button>Відправити</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="contacts" id="contacts">
+            <nav>
+                <h4>Pizza Roma</h4>
+                <p>(050) 000 00 00<br>11:00-22:00</p>
+                <ul>
+                    <li><a href="#menu">Меню</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#head">На початок</a></li>
+                </ul>
+                <h5>Приєднуйся</h5>
+                <a href="https://www.facebook.com/"><img src="img/icons/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/"><img src="img/icons/instagram.png" alt="instagram"></a>
+            </nav>
+            <hr>
+            <p class="developer">сайт розроблено: Сушениця Андрій</p>
+        </div>
+    </footer>
 </body>
+
 </html>

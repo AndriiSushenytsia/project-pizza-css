@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Amaranth:wght@400;700&family=Noto+Sans&family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+:root {
+    background-color: #303236;
+}
+   
+.call-number {
+    font-family: 'Alatsi', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.delivery-service {
+    font-family: 'Alatsi', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+#head ul {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(241, 86, 65);
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.name p {
+    font-family: sans-serif;
+    color: white;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Amaranth', sans-serif;
+    color: rgb(241, 86, 65);
+    font-size: 141px;
+    font-weight: 700;
+}
+
+#about {
+    font-family: sans-serif;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+article p {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(218, 218, 219);
+    font-size: 17px;
+}
+
+article h3 {
+    font-family: sans-serif;
+    color:rgb(241, 86, 65);
+    font-size: 18px;
+}
+
+.menu h2 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 41px;
+}
+
+.menu h3 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 23px;
+}
+
+.menu p {
+    font-family: 'Noto Sans', sans-serif;
+    color: rgb(218, 218, 219);
+    font-size: 17px;
+}
+
+.order h2 {
+font-family: sans-serif;
+color: white;
+font-size: 41px;
+}
+
+.reviews h3 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 41px;
+    }
+
+    .contacts h4 {
+        font-family: 'Amaranth', sans-serif;
+        color: rgb(241, 86, 65);
+        font-size: 30px;
+    }
+
+    .contacts p {
+        font-family: 'Noto Sans', sans-serif;
+        color: rgb(218, 218, 219);
+        font-size: 17px;
+    }
+    .contacts ul {
+        font-family: 'Noto Sans', sans-serif;
+        color: rgb(218, 218, 219);
+        font-size: 17px;
+    }
+
+    .contacts ul :hover {
+        color: rgb(241, 86, 65);
+    }
+
+    h5 {
+        font-family: 'Noto Sans', sans-serif;
+        color: rgb(218, 218, 219);
+        font-size: 17px;
+    }
+    
+    .contacts .developer {
+        font-family: sans-serif;
+        color: rgb(218, 218, 219);
+        font-size: 12px;
+    }
