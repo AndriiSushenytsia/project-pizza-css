@@ -85,19 +85,56 @@ article h3 {
     color: var(--important-color);
 }
 
-.menu h2 {
+.menu-line {
     color: var(--main-color);
-    font-size: 41px;
+    font-size: 2.7rem;
+    text-align: center;
 }
 
-.menu h3 {
-    color: var(--main-color);
-    font-size: 23px;
+.menu-position {
+    border: solid 2px;
 }
 
-.menu p {
+.menu-position h3 {
+    color: var(--main-color);
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.menu-position p {
     font-family: 'Noto Sans', sans-serif;
     color: var(--strong-color);
+    text-align: center;
+}
+
+.menu-position img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    width: 130px;
+    height: 40px;
+    border: 2px solid var(--strong-color);
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--important-color);
+}
+
+.button-content {
+    font-size: 1rem;
+    color: var(--main-color);
+    text-align: center;
 }
 
 .order h2 {
@@ -168,6 +205,11 @@ h5 {
         margin-right: 0;
         padding: 5px 15px 0 5px;
     }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr
+    }
 }
 
 @media (min-width: 550px) {
@@ -215,6 +257,11 @@ h5 {
         margin-right: 5px;
         margin-top: 15px;
     }
+
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (min-width: 825px) {
@@ -233,6 +280,7 @@ h5 {
     .delivery-service {
         justify-self: center;
         margin-top: 1.2rem;
+        font-size: 1.5rem;
     }
 
     h1 {
@@ -243,10 +291,6 @@ h5 {
     .name p {
         font-size: 2.5rem;
         padding: 120px 5px 30px 5px;
-    }
-
-    .delivery-service {
-        font-size: 1.5rem;
     }
 
     #about p {
@@ -266,5 +310,10 @@ h5 {
     article p {
         padding: 50px 15px 50px 15px;
         font-size: 1.4rem;
+    }
+    
+    .menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
