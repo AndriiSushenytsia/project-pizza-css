@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Amaranth:wght@400;700&family=Noto+Sans&family=PT+Sans+Narrow:wght@400;700&display=swap');
-
+ 
 :root {
     background-color: #303236;
-    --main-color:white; --strong-color: rgb(218, 218, 219); --important-color: rgb(241, 86, 65); font-family: sans-serif;
+    --main-color:white;
+    --strong-color: rgb(218, 218, 219);
+    --important-color: rgb(241, 86, 65);
+    font-family: sans-serif;
     scroll-behavior: smooth;
     max-width: 1980px;
 }
@@ -174,7 +177,7 @@ h5 {
 
 .join {
     max-width: 30px;
-}   
+}
 
 nav div {
     text-align: center;
@@ -341,7 +344,7 @@ ul {
         padding: 50px 15px 50px 15px;
         font-size: 1.4rem;
     }
-    
+
     .menu {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -351,5 +354,4 @@ ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
 }
