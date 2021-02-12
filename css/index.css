@@ -168,6 +168,26 @@ h5 {
     font-size: 12px;
 }
 
+.delivery-bottom {
+    color: var(--main-color);
+}
+
+.join {
+    max-width: 30px;
+}   
+
+nav div {
+    text-align: center;
+}
+
+.map {
+    padding-top: 50px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
 @media (min-width: 300px) {
     nav {
         display: flex;
@@ -209,6 +229,11 @@ h5 {
     .menu {
         display: grid;
         grid-template-columns: 1fr
+    }
+
+    #bottom {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -261,6 +286,11 @@ h5 {
     .menu {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    #bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -316,4 +346,10 @@ h5 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    #bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
