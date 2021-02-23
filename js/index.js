@@ -7,27 +7,30 @@ const menuPositions = [
   "#menu-sixth",
 ];
 
-let x = 0;
-let y = x + 1;
-let z = y + 1;
+let currIdx = 0;
 
-const menuPosX = document.querySelector(menuPositions[x]);
-const menuPosY = document.querySelector(menuPositions[y]);
-const menuPosZ = document.querySelector(menuPositions[z]);
-
-menuPosX.hidden = true;
-menuPosY.hidden = true;
-menuPosZ.hidden = true;
-
-
-function nextMenu() {
-  
+function showCurrent() {
+  menuPositions.forEach( el => document.querySelector(el).hidden = true);
+  document.querySelector(menuPositions[currIdx]).hidden = false;
+  const nextIdx = currIdx + 1 > menuPositions.length - 1 ? 0 : currIdx + 1;
+  document.querySelector(menuPositions[nextIdx]).hidden = false;
+  const afterNext = nextIdx + 1 > menuPositions.length - 1 ? 0 : nextIdx + 1;
+  document.querySelector(menuPositions[afterNext]).hidden = false;
 }
+
+showCurrent ();
 
 function prevMenu() {
-    
+currIdx--;
+if (currIdx < 0) currIdx = menuPositions.length - 1;
+showCurrent();
 }
 
-document.querySelector('.prevbutton').addEventListener('click', prevMenu);
-document.querySelector('.nextbutton').addEventListener('click', nextMenu);
+function nextMenu() {
+ currIdx++;
+ if (currIdx >= menuPositions.length) currIdx = 0;
+ showCurrent();
+}
 
+document.querySelector(".prevbutton").addEventListener("click", prevMenu);
+document.querySelector(".nextbutton").addEventListener("click", nextMenu);
