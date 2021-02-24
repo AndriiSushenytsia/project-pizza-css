@@ -142,7 +142,7 @@ button:hover {
   text-align: center;
 }
 
-.order {
+.order-now {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
       url(../img/background/order.jpg);
     -webkit-background-size: cover;
@@ -154,21 +154,39 @@ button:hover {
     background-attachment: fixed;
   }
 
-.order h2 {
+.order-now h2 {
   color: var(--main-color);
-  font-size: 41px;
+  font-size: 2.7rem;
 }
+
+#countdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+#countdown p {  
+  font-family: "Amaranth", sans-serif;
+  color: var(--important-color);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#countdown span {  
+  font-family: "Amaranth", sans-serif;
+  color: var(--main-color);
+  font-size: 3rem;
+  text-align: center;
+}
+
+
 
  .carousel-buttons {
     display: flex;
     justify-content: center;
     padding: 25px 25px 25px 25px;
   }
-
-.reviews h3 {
-  color: var(--main-color);
-  font-size: 41px;
-}
 
 .contacts h4 {
   font-family: "Amaranth", sans-serif;
@@ -254,16 +272,26 @@ ul {
     grid-template-columns: 1fr;
   }
 
-  .order {
+  .order-now {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
   }
 
-  .order h2 {
+  .order-now h2 {
     padding: 25px 10px 10px 10px;
     text-align: center;
   }
+
+  #countdown p {  
+  font-size: 1rem;
+  text-align: center;
+}
+
+#countdown span {  
+  font-size: 3rem;
+  text-align: center;
+}
 
   #bottom {
     display: grid;
@@ -323,13 +351,13 @@ ul {
     grid-template-columns: 1fr 1fr;
   }
 
-  .order {
+  .order-now {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
   }
 
-  .order h2 {
+  .order-now h2 {
     padding: 25px 25px 25px 50px;
     font-size: 3rem;
   }
@@ -393,13 +421,13 @@ ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .order {
+  .order-now {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
   }
 
-  .order h2 {
+  .order-now h2 {
     padding: 40px 50px 25px 50px;
     font-size: 3.5rem;
   }
