@@ -142,6 +142,10 @@ button:hover {
   text-align: center;
 }
 
+.carousel-buttons {
+    padding: 25px;
+  }
+
 .order-now {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../img/background/order.jpg);
