@@ -142,10 +142,28 @@ button:hover {
   text-align: center;
 }
 
+.order {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(../img/background/order.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
 .order h2 {
   color: var(--main-color);
   font-size: 41px;
 }
+
+ .carousel-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 25px 25px 25px 25px;
+  }
 
 .reviews h3 {
   color: var(--main-color);
@@ -236,10 +254,22 @@ ul {
     grid-template-columns: 1fr;
   }
 
+  .order {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .order h2 {
+    padding: 25px 10px 10px 10px;
+    text-align: center;
+  }
+
   #bottom {
     display: grid;
     grid-template-columns: 1fr;
   }
+
 }
 
 @media (min-width: 550px) {
@@ -291,6 +321,17 @@ ul {
   .menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .order {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  .order h2 {
+    padding: 25px 25px 25px 50px;
+    font-size: 3rem;
   }
 
   #bottom {
@@ -350,6 +391,17 @@ ul {
   .menu {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .order {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+
+  .order h2 {
+    padding: 40px 50px 25px 50px;
+    font-size: 3.5rem;
   }
 
   #bottom {
