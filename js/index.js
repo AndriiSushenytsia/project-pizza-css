@@ -10,34 +10,34 @@ const menuPositions = [
 let currIdx = 0;
 
 function showCurrent() {
-  menuPositions.forEach( el => document.querySelector(el).hidden = true);
+  menuPositions.forEach((el) => (document.querySelector(el).hidden = true));
   if (window.screen.width < 550) {
     document.querySelector(menuPositions[currIdx]).hidden = false;
   } else if (window.screen.width < 825) {
     document.querySelector(menuPositions[currIdx]).hidden = false;
     const nextIdx = currIdx + 1 > menuPositions.length - 1 ? 0 : currIdx + 1;
-  document.querySelector(menuPositions[nextIdx]).hidden = false;
+    document.querySelector(menuPositions[nextIdx]).hidden = false;
   } else {
     document.querySelector(menuPositions[currIdx]).hidden = false;
     const nextIdx = currIdx + 1 > menuPositions.length - 1 ? 0 : currIdx + 1;
     document.querySelector(menuPositions[nextIdx]).hidden = false;
-  const afterNext = nextIdx + 1 > menuPositions.length - 1 ? 0 : nextIdx + 1;
-  document.querySelector(menuPositions[afterNext]).hidden = false;
+    const afterNext = nextIdx + 1 > menuPositions.length - 1 ? 0 : nextIdx + 1;
+    document.querySelector(menuPositions[afterNext]).hidden = false;
   }
 }
 
-showCurrent ();
+showCurrent();
 
 function prevMenu() {
-currIdx--;
-if (currIdx < 0) currIdx = menuPositions.length - 1;
-showCurrent();
+  currIdx--;
+  if (currIdx < 0) currIdx = menuPositions.length - 1;
+  showCurrent();
 }
 
 function nextMenu() {
- currIdx++;
- if (currIdx >= menuPositions.length) currIdx = 0;
- showCurrent();
+  currIdx++;
+  if (currIdx >= menuPositions.length) currIdx = 0;
+  showCurrent();
 }
 
 document.querySelector(".prevbutton").addEventListener("click", prevMenu);
@@ -69,9 +69,5 @@ function updateCountdown() {
   minutes.innerHTML = m < 10 ? "0" + m : m;
   seconds.innerHTML = s < 10 ? "0" + s : s;
 }
-
-setTimeout(() => {
-  loading.remove();
-}, 1000);
 
 setInterval(updateCountdown, 1000);
