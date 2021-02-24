@@ -97,7 +97,7 @@ article h3 {
 }
 
 .menu-position {
-  border: solid 2px;
+  border: 2px solid;
 }
 
 .menu-position h3 {
@@ -116,7 +116,7 @@ article h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 80px;
+  padding-top: 25px;
 }
 
 .add-to-cart {
@@ -143,16 +143,16 @@ button:hover {
 }
 
 .order-now {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-      url(../img/background/order.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  }
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/background/order.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .order-now h2 {
   color: var(--main-color);
@@ -166,27 +166,25 @@ button:hover {
   align-items: center;
 }
 
-#countdown p {  
+#countdown p {
   font-family: "Amaranth", sans-serif;
   color: var(--important-color);
   font-size: 1.5rem;
   text-align: center;
 }
 
-#countdown span {  
+#countdown span {
   font-family: "Amaranth", sans-serif;
   color: var(--main-color);
   font-size: 3rem;
   text-align: center;
 }
 
-
-
- .carousel-buttons {
-    display: flex;
-    justify-content: center;
-    padding: 25px 25px 25px 25px;
-  }
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  padding: 25px 25px 25px 25px;
+}
 
 .contacts h4 {
   font-family: "Amaranth", sans-serif;
@@ -279,25 +277,28 @@ ul {
   }
 
   .order-now h2 {
-    padding: 25px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     text-align: center;
   }
 
-  #countdown p {  
-  font-size: 1rem;
-  text-align: center;
-}
+  .carousel-buttons {
+    padding: 10px 25px 10px 25px;
+  }
 
-#countdown span {  
-  font-size: 3rem;
-  text-align: center;
-}
+  #countdown p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #countdown span {
+    font-size: 3rem;
+    text-align: center;
+  }
 
   #bottom {
     display: grid;
     grid-template-columns: 1fr;
   }
-
 }
 
 @media (min-width: 550px) {
@@ -358,8 +359,12 @@ ul {
   }
 
   .order-now h2 {
-    padding: 25px 25px 25px 50px;
+    padding: 10px 25px 10px 50px;
     font-size: 3rem;
+  }
+
+  .carousel-buttons {
+    padding: 10px 25px 10px 25px;
   }
 
   #bottom {
@@ -428,7 +433,7 @@ ul {
   }
 
   .order-now h2 {
-    padding: 40px 50px 25px 50px;
+    padding: 10px 50px 10px 50px;
     font-size: 3.5rem;
   }
 
