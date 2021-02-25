@@ -43,6 +43,8 @@ function nextMenu() {
 document.querySelector(".prevbutton").addEventListener("click", prevMenu);
 document.querySelector(".nextbutton").addEventListener("click", nextMenu);
 
+window.addEventListener('resize', showCurrent);
+
 const days = document.getElementById("days");
 const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
