@@ -5,6 +5,11 @@ const menuPositions = [
   "#menu-forth",
   "#menu-fifth",
   "#menu-sixth",
+  "#menu-seventh",
+  "#menu-eighth",
+  "#menu-nineth",
+  "#menu-tenth",
+  "#menu-eleventh"
 ];
 
 let currIdx = 0;
